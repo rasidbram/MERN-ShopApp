@@ -1,5 +1,5 @@
 {
-  "name": "react-boiler-plate",
+  "name": "react-shopapp",
   "version": "1.0.0",
   "description": "react boiler plate",
   "main": "index.js",
@@ -13,11 +13,11 @@
     "frontend": "npm run front --prefix client",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
-  "author": "John ahn",
+  "author": "rashid",
   "license": "ISC",
   "dependencies": {
     "async": "^3.1.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^3.0.8",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.5",
@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.6"
   }
 }

@@ -33,7 +33,7 @@ const userSchema = mongoose.Schema({
         type: Array,
         default: []
     },
-    image: String,
+    image:String,
     token: {
         type: String,
     },

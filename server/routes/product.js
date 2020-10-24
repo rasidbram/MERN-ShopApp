@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Product } = require("../models/Product");
 const multer = require('multer');
+const path = require('path')
 
 const { auth } = require("../middleware/auth");
 
@@ -28,7 +29,7 @@ var upload = multer({ storage: storage }).single("file")
 //             Product
 //=================================
 
-router.post("/uploadImage", auth, (req, res) => {
+router.post("/uploadImage",auth, (req, res) => {
 
     upload(req, res, err => {
         if (err) {
