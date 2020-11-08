@@ -2,6 +2,7 @@
 /build
 /Procfile
 uploads
+dev.js
 
 .DS_Store
 .env
