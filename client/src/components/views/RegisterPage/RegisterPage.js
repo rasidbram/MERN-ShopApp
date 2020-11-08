@@ -104,6 +104,7 @@ function RegisterPage(props) {
                   id="name"
                   placeholder="Enter your name"
                   type="text"
+                  autoComplete="off"
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -121,6 +122,7 @@ function RegisterPage(props) {
                   id="lastName"
                   placeholder="Enter your Last Name"
                   type="text"
+                  autoComplete="off"
                   value={values.lastName}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -138,6 +140,7 @@ function RegisterPage(props) {
                   id="email"
                   placeholder="Enter your Email"
                   type="email"
+                  autoComplete="off"
                   value={values.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -155,6 +158,7 @@ function RegisterPage(props) {
                   id="password"
                   placeholder="Enter your password"
                   type="password"
+                  autoComplete="off"
                   value={values.password}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -172,6 +176,7 @@ function RegisterPage(props) {
                   id="confirmPassword"
                   placeholder="Enter your confirmPassword"
                   type="password"
+                  autoComplete="off"
                   value={values.confirmPassword}
                   onChange={handleChange}
                   onBlur={handleBlur}

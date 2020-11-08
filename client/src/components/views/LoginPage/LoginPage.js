@@ -88,6 +88,7 @@ function LoginPage(props) {
                   prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                   placeholder="Enter your email"
                   type="email"
+                  autoComplete="off"
                   value={values.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
