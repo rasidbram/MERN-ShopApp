@@ -1,7 +1,7 @@
 {
   "name": "react-shopapp",
   "version": "1.0.0",
-  "description": "react boiler plate",
+  "description": "react shop app",
   "main": "index.js",
   "engine": {
     "node": "v12.18.0",
@@ -11,7 +11,8 @@
     "start": "node server/index.js",
     "backend": "nodemon server/index.js",
     "frontend": "npm run front --prefix client",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "rashid",
   "license": "ISC",
