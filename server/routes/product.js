@@ -29,7 +29,7 @@ var upload = multer({ storage: storage }).single("file")
 //             Product
 //=================================
 
-router.post("/uploadImage",auth, (req, res) => {
+router.post("https://sshopapp.herokuapp.com/uploadImage",auth, (req, res) => {
 
     upload(req, res, err => {
         if (err) {
@@ -41,7 +41,7 @@ router.post("/uploadImage",auth, (req, res) => {
 });
 
 
-router.post("/uploadProduct", auth, (req, res) => {
+router.post("https://sshopapp.herokuapp.com/uploadProduct", auth, (req, res) => {
 
     //save all the data we got from the client into the DB 
     const product = new Product(req.body)
@@ -54,7 +54,7 @@ router.post("/uploadProduct", auth, (req, res) => {
 });
 
 
-router.post("/getProducts", (req, res) => {
+router.post("https://sshopapp.herokuapp.com/getProducts", (req, res) => {
 
     let order = req.body.order ? req.body.order : "desc";
     let sortBy = req.body.sortBy ? req.body.sortBy : "_id";
@@ -108,7 +108,7 @@ router.post("/getProducts", (req, res) => {
 
 //?id=${productId}&type=single
 //id=12121212,121212,1212121   type=array 
-router.get("/products_by_id", (req, res) => {
+router.get("https://sshopapp.herokuapp.com/products_by_id", (req, res) => {
     let type = req.query.type
     let productIds = req.query.id
 
