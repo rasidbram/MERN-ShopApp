@@ -66,7 +66,7 @@ function UploadProductPage(props) {
             continents: ContinentValue,
         }
 
-        Axios.post('/api/product/uploadProduct', variables)
+        Axios.post('https://sshopapp.herokuapp.com/product/uploadProduct', variables)
             .then(response => {
                 if (response.data.success) {
                     alert('Product Successfully Uploaded')
